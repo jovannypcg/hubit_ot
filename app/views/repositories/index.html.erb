@@ -11,7 +11,9 @@
     </header>
 
     <section>
-      <%= render 'repo' %>
+      <% @repos.each do |stored_repo| %>
+        <%= render 'repo', repo: stored_repo %>
+      <% end %>
     </section>
   </body>
 </html>
