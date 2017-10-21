@@ -1,0 +1,11 @@
+<nav>
+  <div class="nav-wrapper container">
+    <%= link_to(root_path, class: 'brand-logo') { 'Hubit' } %>
+
+    <ul class="right">
+      <li>
+        <%= button_to 'Download', { action: :download }, { class: 'btn' } %>
+      </li>
+    </ul>
+  </div>
+</nav>
