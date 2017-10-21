@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  include Storable
+
   has_many :repositories
 
   def self.parse(user)

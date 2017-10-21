@@ -1,4 +1,6 @@
 class Repository < ApplicationRecord
+  include Storable
+
   belongs_to :user
 
   def self.parse(repo)
